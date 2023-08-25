@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quick Browser</string>
+    <string name="new_tab">New tab</string>
+    <string name="google">Google</string>
+    <string name="search">Search</string>
+    <string name="h">H</string>
+    <string name="url_copied">Url Copied</string>
+    <string name="enter_url_here">Enter Url Here</string>
+    <string name="Press_again">Press Again To Exit</string>
+    <string name="clear_all_history">Clear all history..</string>
+</resources>
