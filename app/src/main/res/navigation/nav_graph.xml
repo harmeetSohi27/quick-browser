@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allTabsFragment">
+
+    <fragment
+        android:id="@+id/allTabsFragment"
+        android:name="com.ultivic.quickbrowser.fragments.AllTabsFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_all_tabs">
+
+        <argument
+            android:name="isFromUser"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ultivic.quickbrowser.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="tabData"
+            app:argType="com.ultivic.quickbrowser.models.TabData" />
+        <argument
+            android:name="historyUrl"
+            app:argType="string"
+            android:defaultValue="https://www.google.com/" />
+        <argument
+            android:name="isUrlFromHistory"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.ultivic.quickbrowser.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>
